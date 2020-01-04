@@ -1,4 +1,4 @@
-body{
+.body{
 	background-color: black;
 }
 p{
@@ -9,8 +9,60 @@ p{
 .snowman{
    width:200px;
    height:500px;
-   background-color:lightgreen;
-
+   position:relative;
+    
 	}
+.body{
+   	width: 150px;
+   	height: 150px;
+   	background-color: lightblue;
+   	border-radius: 50%;
+   	position:absolute;
+   	top: 150px;
+   	left: 25px;
+   }
+.legs{
+	width: 200px;
+	height: 200px;
+	background-color: lightblue;
+	border-radius: 50%; 
+	position:absolute;
+	top: 300px;
+}
+.head{
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	border-radius: 50%; 
+	position:absolute;
+	left: 50px;
+	top: 50px;
 
-
+}
+.eyel{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position:absolute;
+	top: 40px;
+	left: 20px;
+}
+.eyer{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+    border-radius: 50%;
+    position:absolute;
+    top: 40px;
+    left: 70px;	
+}
+.smile{
+	width: 25px;
+	height: 20px;
+	background-color: black;
+	border-radius: 0 0 50% 50% / 0 0 100% 100%;
+	position:absolute;
+	left: 40px;
+	top:40px; 
+}

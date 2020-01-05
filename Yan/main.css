@@ -4,6 +4,10 @@ body{
 .santa{
     width: 350px;
     height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 .body{
     width: 350px;
@@ -77,15 +81,75 @@ body{
     border-radius:35%;
     position: absolute;
     left: 75px;
-    top: 50px
+    top: 50px;
     z-index:4;
 }
 .mouse{
     width: 35px;
     height: 15px;
     background-color:  crimson;
-    border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+    border-radius: 0 0 35% 35%/ 0 0 50% 50%;
     position: absolute;
     left: 76px;
     top: 50px;
+    animation: 5s smeh infinite;
+}
+.earl{
+    width: 20px;
+    height: 30px;
+    background-color: #fc8363;
+    border-radius: 0 0 100% 100%/ 0 0 50% 50%;
+    position: absolute;
+    left: -10px;
+    top: 30px;
+
+}
+.earr{
+    width: 20px;
+    height: 30px;
+    background-color: #fc8363;
+    border-radius: 0 0 35% 35%/ 0 0 35% 35%;
+    position: absolute;
+    left: 160px;
+    top:30;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+background-color: red;
+border-radius: 50%;
+position: absolute;
+left: 70px;
+top: -130px;
+z-index: -5;
+}
+.circlew{
+ width: 30px;
+    height: 30px;
+background-color: white;
+border-radius: 50%;
+position: absolute;
+left: 130px;
+top: -130px;
+z-index: -6;   
+}
+@keyframes smeh{
+    0%{border-radius: 0 0 50% 50%/ 0 0 100% 100%;  }
+    30%{border-radius: 0 0 50% 50%/ 0 0 100% 100%;height: 15px;}
+    50%{border-radius: 50%;height: 35px; }
+    70%{border-radius: 0 0 50% 50%/ 0 0 100% 100%;height: 15px;}
+    100%{border-radius: 0 0 50% 50%/ 0 0 100% 100% }
+}
+h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    animation: 5s fon infinite;
+}
+@keyframes fon {
+    20%{color: yellow;}
+    40%{color: blue;}
+    60%{color: red;}
+    80%{color: purple;}
+    100%{color: yellow;}
 }

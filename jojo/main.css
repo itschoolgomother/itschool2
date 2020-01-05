@@ -5,11 +5,24 @@ p{
 	color: lightgreen;
 	font-size: 43px;
 	text-align:center;
+	animation:10s fon infinite;
 }
+@keyframes fon{
+    0%{color: white;}
+    25%{color: teal;}
+    50%{color: lightgreen;                                                                                                                                                                                                                                                                                          }
+    75%{color: purple;}
+    100%{color: lightblue;}
+    125%{color:red;}
+ }
+    
 .snowman{
    width:200px;
    height:500px;
-   position:relative;
+   position:absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
     
 	}
 .body{
@@ -65,4 +78,42 @@ p{
 	position:absolute;
 	left: 40px;
 	top:40px; 
+}
+.arml{
+	width: 100px;
+	height: 10px;
+	background-color: brown;
+	position:absolute;
+	left: -90px;
+	top: 55px;
+	transform:rotate(-15deg);
+	z-index: -1;
+}
+.armr{
+	width: 100px;
+	height: 10px;
+	background-color: brown;
+	position:absolute;
+	left: 140px;
+	top:55px;
+	transform:rotate(15deg);
+	z-index: -1;
+}
+
+.legl{
+	width: 60px;
+	height: 40px;
+	background-color: lightblue;
+	border-radius: 50%;
+    position:absolute;
+    top: 170px;
+}
+.legr{
+	width: 60px;
+	height: 40px;
+	background-color: lightblue;
+	border-radius: 50%;
+	position:absolute;
+	top: 170px;
+	left: 135px;
 }

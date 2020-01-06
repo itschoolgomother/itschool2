@@ -1,5 +1,7 @@
-.body{
-	background-color: black;
+body{
+	
+	background-image: url(snow.gif);
+	background-size: 100%;
 }
 p{
 	color: lightgreen;
@@ -28,7 +30,7 @@ p{
 .body{
    	width: 150px;
    	height: 150px;
-   	background-color: lightblue;
+   	background-color: grey;
    	border-radius: 50%;
    	position:absolute;
    	top: 150px;
@@ -37,7 +39,7 @@ p{
 .legs{
 	width: 200px;
 	height: 200px;
-	background-color: lightblue;
+	background-color: grey;
 	border-radius: 50%; 
 	position:absolute;
 	top: 300px;
@@ -45,7 +47,7 @@ p{
 .head{
 	width: 100px;
 	height: 100px;
-	background-color: lightblue;
+	background-color: grey;
 	border-radius: 50%; 
 	position:absolute;
 	left: 50px;
@@ -103,7 +105,7 @@ p{
 .legl{
 	width: 60px;
 	height: 40px;
-	background-color: lightblue;
+	background-color: grey;
 	border-radius: 50%;
     position:absolute;
     top: 170px;
@@ -111,9 +113,56 @@ p{
 .legr{
 	width: 60px;
 	height: 40px;
-	background-color: lightblue;
+	background-color: grey;
 	border-radius: 50%;
 	position:absolute;
 	top: 170px;
 	left: 135px;
+}
+.dot1{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position:absolute;
+	left:70px;
+	top:40px;
+	animation: 3s pygovica infinite;
+}
+.dot2{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position:absolute;
+	left: 70px;
+	top:120px;
+	animation: 3s pygovica infinite;
+}
+.dot3{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position:absolute;
+	left: 95px;
+	top: 60px;
+	animation: 3s pygovica infinite;
+}
+.dot4{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position:absolute;
+	left: 102px;
+	top: 140px;
+	animation: 3s pygovica infinite;
+}
+@keyframes pygovica {
+	0%{background-color: black;height: 10px}
+	25%{background-color:lightgreen;}
+	50%{background-color:tomato;height: 25px}
+	75%{background-color:pink;}
+	100%{background-color:lightblue;height: 10px}
 }

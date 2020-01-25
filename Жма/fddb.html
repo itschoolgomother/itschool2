@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="bruh" onclick="daunila()">кто прочитал тот</button>
+<textarea id="text"></textarea>
+<script type="text/javascript">
+	var text;
+	var k = 0
+function daunila(){
+	text = document.getElementById('text').value;
+document.getElementById('bruh').style.color = text
+var k = Math.random()*100;
+k=Math.round(k)
+}
+if(text<k){
+	alert('da')
+}
+</script>
+</body>
+</html>

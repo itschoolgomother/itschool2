@@ -4,19 +4,45 @@
 	<title></title>
 </head>
 <body>
-<button id="bruh" onclick="daunila()">кто прочитал тот</button>
+<button id="bruh" onclick="daunila()">balance</button>
+<button id="JKHF" onclick="linux()">green</button>
+<button id="OP" onclick="pomoika()">red</button>
 <textarea id="text"></textarea>
 <script type="text/javascript">
-	var text;
-	var k = 0
+var money = 1000;
+var text = 'text';
+var a = 0;
+
 function daunila(){
-	text = document.getElementById('text').value;
-document.getElementById('bruh').style.color = text
-var k = Math.random()*100;
-k=Math.round(k)
+	alert('У вас:'+money+'$')
 }
-if(text<k){
-	alert('da')
+function linux(){
+text=document.getElementById('text').value;
+	a= Math.random()
+		if (money<text) {
+		alert('ban')
+		return;
+	}
+if(a>0.5){
+money=money + text*2
+alert('not bad:'+money+'$')}
+else{
+	money=money - text
+	alert('you suck:'+money+'$')}
+}
+function pomoika() {
+text=document.getElementById('text').value;
+	a= Math.random()
+		if (money<text) {
+		alert('ban')
+		return;}
+	if(a<0.5){
+money=money - text
+alert('you suck:'+money+'$')}
+else{
+	money=money + text*2
+	alert('not bad'+money+'$')
+}
 }
 </script>
 </body>

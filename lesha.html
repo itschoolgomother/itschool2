@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</title>
+</head>
+<body>
+  <meta charset="utf-8">
+  <canvas id = "mindustry"></canvas>
+<script type="text/javascript">
+  var canvas = document.getElementById('mindustry')
+  var ctx = canvas.getContext('2d')
+  canvas.width = 11500;
+  canvas.height = 500;
+  var x = 30;
+  for (var i = 0;i<10; i++) {
+    text()
+    function text(){
+ ctx.beginPath()
+ ctx.clearRect(0,0,1300,1300)
+ ctx.rect(x,100,100,0,7)
+ ctx.fillStyle = "green"
+ ctx.fill()
+ ctx.beginPath()
+ ctx.rect(x,200,100,0,7)
+ ctx.fillStyle = "brown"
+ ctx.fill()
+ ctx.beginPath()
+ ctx.rect(x,150,100,0,7)
+ ctx.fillStyle = "red"
+ ctx.fill()
+ x=x+6
+    } 
+  }
+  setInterval(text,16)
+</script>
+</body>
+</html>

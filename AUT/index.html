@@ -1,9 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>A.Y.E</title>
 </head>
 <body>
-<script src="main.js"></script>
+<button onclick="ariruiu()">Vah kakoi</button>
+<canvas id="canvas"></canvas>
+<script type="text/javascript">
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+canvas.width = 500;
+canvas.height = 500;
+var x =50;
+var y =50;
+var c = 0
+for (var i = 0; i < 25; i++) {
+ctx.beginPath();
+ctx.rect(x,y,50,50);
+ctx.fill();
+x+=75;
+if(x>400){
+	y+=75
+	x=50
+}
+}
+function ariruiu(){
+var x =50;
+var y =50;
+
+	for (var i = 0; i < 5; i++) {
+ctx.fillStyle="blue"
+ctx.beginPath();
+ctx.rect(x,y,50,50);
+ctx.fill();
+x+=75;}
+
+if (c>=1) {
+y= 125;
+x =50;
+for (var i = 0; i < 5; i++) {
+ctx.fillStyle="red"
+ctx.beginPath();
+ctx.rect(x,y,50,50);
+ctx.fill();
+x+=75;
+}}
+if (c>=2) {
+y= 200;
+x =50;
+for (var i = 0; i < 5; i++) {
+ctx.fillStyle="green"
+ctx.beginPath();
+ctx.rect(x,y,50,50);
+ctx.fill();
+x+=75;}}
+if (c>=3) {
+y= 275;
+x =50;
+for (var i = 0; i < 5; i++) {
+ctx.fillStyle="purple"
+ctx.beginPath();
+ctx.rect(x,y,50,50);
+ctx.fill();
+x+=75;}}
+if (c>=4) {
+y= 350;
+x =50;
+for (var i = 0; i < 5; i++) {
+ctx.fillStyle="yellow"
+ctx.beginPath();
+ctx.rect(x,y,50,50);
+ctx.fill();
+x+=75;
+}}
+c=c+1}
+</script>
 </body>
 </html>

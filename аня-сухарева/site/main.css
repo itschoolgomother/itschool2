@@ -1,0 +1,38 @@
+
+.con{
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+header{
+	width: 100%;
+	min-height: 100px;
+	background-color: orange;
+}
+.name{
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+}
+/* This is Content */
+
+.content{
+	width: 100%;
+	min-height: 400px;
+	background-color: pink;
+	margin-top: 40px;
+	display: flex;
+}
+.mainL{
+	width: 50%;
+	min-height: 400px;
+}
+.mainR{
+	width: 50%;
+	min-height: 400px;
+}

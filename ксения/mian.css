@@ -28,12 +28,60 @@
 }
 .mianL{
 	width: 50%;
-	min-height: 500px;
-	
+	min-height: 500px;	
 }
 .mianR{
 	width: 50%;
 	min-height: 500px;
-	
-
 }
+.mainL > img{
+	width: 100%;
+}
+.mianR > h2{
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+.mianR > p{
+	padding-left: 15px;
+	padding-top: 10px;
+	color: white;
+}
+.footer{
+	width: 100%;
+	background-color: lightsalmon;
+	min-height: 150px;
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+menu > li{
+	list-style: none;
+	display: inline;
+}
+menu > li > a {
+	color: red;
+	text-decoration: none;
+	padding-left: 50px;
+	font-size: 20px;
+}
+@media screen and (max-width: 700px){
+	.mian{
+		display: block;
+		min-height:300px;
+	}
+	.mainL,.mianR{
+		width: 100%;
+		min-height: 150px;
+	}
+	.mianR{
+		padding-bottom: 50px;
+	}
+	.mianR > p{
+		text-align: center;
+	}
+}
+
+
+

@@ -29,12 +29,12 @@ header{
 	display: flex;
 }
 .mainL{
-	width: 50%;
+	width: 35%;
 	min-height: 400px;
 	padding: 10px;
 }
 .mainR{
-	width: 50%;
+	width: 65%;
 	min-height: 400px;
 	padding: 10px;
 }
@@ -61,7 +61,7 @@ footer{
 	background-color: pink;
 	width: 100%;
 	min-height: 50px;
-	margin-top: 90px;
+	margin-top: 150px;
 }
 footer > div > p {
 	text-align: center;
@@ -80,4 +80,14 @@ menu > a{
 }
 menu > a:first child {
 	margin-left: 0px;
+}
+@media (max-width: 750px){
+	.content{
+		display: block;
+	}
+	.mainL,.mainR{
+		width: 95%;
+		margin: 0 auto;
+		min-width: 200px;
+	}
 }

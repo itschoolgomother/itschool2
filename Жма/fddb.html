@@ -4,46 +4,90 @@
 	<title></title>
 </head>
 <body>
-<button id="bruh" onclick="daunila()">balance</button>
-<button id="JKHF" onclick="linux()">green</button>
-<button id="OP" onclick="pomoika()">red</button>
-<textarea id="text"></textarea>
-<script type="text/javascript">
-var money = 1000;
-var text = 'text';
-var a = 0;
-
-function daunila(){
-	alert('У вас:'+money+'$')
-}
-function linux(){
-text=document.getElementById('text').value;
-	a= Math.random()
-		if (money<text) {
-		alert('ban')
-		return;
+<style type="text/css">
+	.text {
+		position: absolute;
+		font-size: 50px;
+		top: 40%;
+		opacity: 0;
 	}
-if(a>0.5){
-money=money + text*2
-alert('not bad:'+money+'$')}
-else{
-	money=money - text
-	alert('you suck:'+money+'$')}
-}
-function pomoika() {
-text=document.getElementById('text').value;
-	a= Math.random()
-		if (money<text) {
-		alert('ban')
-		return;}
-	if(a<0.5){
-money=money - text
-alert('you suck:'+money+'$')}
-else{
-	money=money + text*2
-	alert('not bad'+money+'$')
-}
-}
+	#l1 {
+		left: 300px;
+	}
+	#l2 {
+		left: 400px
+	}
+	#l3 {
+		left: 500px
+	}
+	#l4 {
+		left: 600px
+	}
+	#l5 {
+		left: 700px
+	}
+	#l6 {
+		left: 800px
+	}
+	@keyframes down {
+		from{top: -10%;}
+	}
+	@keyframes right {
+		from{ left: -10%;}
+	}
+	@keyframes left {
+		from{ left: 110%;}
+	}
+	@keyframes up {
+		from{top: 110%;}
+	}
+</style>
+<div class="text" id="l1">s</div>
+<div class="text" id="l2">h</div>
+<div class="text" id="l3">a</div>
+<div class="text" id="l4">l</div>
+<div class="text" id="l5">u</div>
+<div class="text" id="l6">n</div>
+<script type="text/javascript">
+	var x = prompt('1/6',x)
+	var y = prompt('2/6',y)
+	var z = prompt('3/6',z)
+	var a = prompt('4/6',a)
+	var b = prompt('5/6',b)
+	var c = prompt('6/6',c)
+	window.addEventListener('keydown',ko);
+	function ko() {
+		if (event.code =="KeyS") {
+			document.getElementById('l1').style.animation = "down 2s 1"
+			document.getElementById('l1').style.opacity = 1
+			document.getElementById('l1').style.innerHTML = x
+		}
+		if (event.code =="KeyH") {
+			document.getElementById('l2').style.animation = "right 2s 1"
+			document.getElementById('l2').style.opacity = 1
+			document.getElementById('l2').style.innerHTML = y
+		}
+		if (event.code =="KeyA") {
+			document.getElementById('l3').style.animation = "left 2s 1"
+			document.getElementById('l3').style.opacity = 1
+			document.getElementById('l3').style.innerHTML = z
+		}
+		if (event.code =="KeyL") {
+			document.getElementById('l4').style.animation = "up 2s 1"
+			document.getElementById('l4').style.opacity = 1
+			document.getElementById('l4').style.innerHTML = a
+		}
+		if (event.code =="KeyU") {
+			document.getElementById('l5').style.animation = "down 2s 1"
+			document.getElementById('l5').style.opacity = 1
+			document.getElementById('l5').style.innerHTML = b
+		}
+		if (event.code =="KeyN") {
+			document.getElementById('l6').style.animation = "right 2s 1"
+			document.getElementById('l6').style.opacity = 1
+			document.getElementById('l6').style.innerHTML = c
+		}
+	}
 </script>
 </body>
 </html>

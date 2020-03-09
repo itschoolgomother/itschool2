@@ -82,3 +82,10 @@ line-height: 100px;
 
 
 }
+
+@media (max-width: 900px){
+	header{
+        background-color: red;
+       
+	}
+}

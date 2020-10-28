@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>апельсинчик</title>
+</head>
+<body>
+<button onclick="f()">че смотришь,нажимай сюда</button>
+<button onclick="rp()">+</button>
+<button onclick="rm()">-</button>
+<button onclick="gbg()">пип</button>
+<button onclick="gp()">+</button>
+<button onclick="gm()">-</button>
+<div id="мельпопс"></div>
+<style type="text/css">
+#мельпопс{
+	width: 300px;
+	height: 200px;
+	background-color: lime;
+	}
+</style>
+<script type="text/javascript">
+	var r=0
+	var g=0
+	var b=0
+function f(){var color = prompt('введите цвет')
+document.getElementById('мельпопс').style.backgroundColor=color
+	}
+	function gbg(){
+		var r=Math.random()*255
+		var b=Math.random()*255
+		var g=Math.random()*255
+	document.getElementById('мельпопс').style.backgroundColor="rgb("+r+","+g+","+b+")"		
+		
+	}
+	function rp(){
+		r=r+1
+	document.getElementById('мельпопс').style.backgroundColor="rgb("+r+","+g+","+b+")"}
+	function rm(){
+
+	r=r-1
+	document.getElementById('мельпопс').style.backgroundColor="rgb("+r+","+g+","+b+")"}
+    function gp(){
+    	g=g+1
+    	document.getElementById('мельпопс').style.backgroundColor="rgb("+r+","+g+","+b+")"}
+    function gm(){
+    	g=g-1
+    	document.getElementById('мельпопс').style.backgroundColor="rgb("+r+","+g+","+b+")"}
+  
+
+</script>
+</body>
+</html>

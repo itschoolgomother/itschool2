@@ -1,0 +1,20 @@
+li{
+	list-style-type: none;
+	color: black;
+	border:2px solid black;
+	display: block;
+	margin: 5px 0px -1px 0px;
+	padding: 5px 0px 5px 10px;
+	width: 90px;
+	text-decoration:none;          /*easy*/
+	background-color: orange;
+
+
+}
+li:hover{
+background-color:black;
+color:white;
+text-decoration:underline;
+padding: 0px 5px 0px 0px;
+
+}

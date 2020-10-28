@@ -4,18 +4,47 @@
 	<title></title>
 </head>
 <body>
-<textarea id="tt"></textarea>
-<button onclick="to()">Баланс</button>
-<button onclick="te()">Красный</button>
-<button onclick="ta()">Черный</button>
+	<button onclick="win()">да!</button>
+	<center><h1>вы довольны своей зарплатой?</h1></center>
+	<style type="text/css">
+		#p1{width:20px;
+		height: 20px;
+		border: 5px solid gold;
+		background-color: pink;
+		border-radius: 50px;
+		position: absolute;
+		cursor: pointer;
+		}
+
+	</style>
+<button id="p1">нет</button>
 <script type="text/javascript">
-	var k = document.getElementById('tt').value;
-	var m = 1000;
-	var r = Math.random()
-	r = Math.round(r)
-	function to(){
-	
+	window.addEventListener('mousemove',f)
+	function win(){
+		alert('мы знали что вам хорошо!')
 	}
-</script>
+	var rx = 0;
+	var ry = 0;
+	var r = 0;
+	var x = 350;
+	var y = 350;
+function f(){
+	var mx = event.x;
+	var my = event.y;
+	rx = x*x+50+y*y+50;
+	ry = mx*mx+50+my*my+50;
+	rx = Math.sqrt(rx)
+	ry = Math.sqrt(ry)
+	r=ry-rx;
+	if (r<0){r=-r;}
+document.getElementById('p1').style.left= x+"px"
+document.getElementById('p1').style.top= y+"px"
+
+if(r<50){
+x=Math.random()*1000;
+y=Math.random()*800;}
+
+document.getElementById('p1').style.background='rgb('+r+',0,0)';
+}</script>
 </body>
 </html>
